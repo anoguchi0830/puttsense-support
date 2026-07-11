@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PuttSense サポート</title>
+<meta name="description" content="PuttSense（パター練習支援アプリ）のサポートページです。お問い合わせはこちらから。">
+<style>
+  :root {
+    --bg: #f6f7f5;
+    --card-bg: #ffffff;
+    --text: #1c1f1b;
+    --text-sub: #56605a;
+    --accent: #1e7a4c;
+    --accent-dark: #16603b;
+    --border: #e2e6e0;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #14171a;
+      --card-bg: #1e2228;
+      --text: #eef1ee;
+      --text-sub: #a7b0aa;
+      --accent: #4fbf87;
+      --accent-dark: #6fd39f;
+      --border: #2c3138;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Yu Gothic", "Helvetica Neue", Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.75;
+    padding: 0 20px;
+  }
+  .wrap {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 64px 0 48px;
+  }
+  .logo-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 56px;
+    height: 56px;
+    border-radius: 16px;
+    background: var(--accent);
+    color: #fff;
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+  h1 {
+    font-size: 26px;
+    margin: 0 0 8px;
+    letter-spacing: 0.02em;
+  }
+  .tagline {
+    color: var(--text-sub);
+    font-size: 15px;
+    margin: 0 0 36px;
+  }
+  .card {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 28px 28px;
+    margin-bottom: 20px;
+  }
+  .card h2 {
+    font-size: 16px;
+    margin: 0 0 12px;
+    color: var(--text-sub);
+    font-weight: 600;
+  }
+  .card p {
+    margin: 0;
+    font-size: 15.5px;
+  }
+  .btn {
+    display: inline-block;
+    margin-top: 18px;
+    padding: 12px 22px;
+    background: var(--accent);
+    color: #fff !important;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 14.5px;
+    transition: background 0.15s ease;
+  }
+  .btn:hover { background: var(--accent-dark); }
+  .faq-item {
+    padding: 14px 0;
+    border-bottom: 1px solid var(--border);
+  }
+  .faq-item:last-child { border-bottom: none; }
+  .faq-item h3 {
+    font-size: 14.5px;
+    margin: 0 0 6px;
+    font-weight: 600;
+  }
+  .faq-item p {
+    margin: 0;
+    font-size: 14px;
+    color: var(--text-sub);
+  }
+  footer {
+    margin-top: 40px;
+    font-size: 13px;
+    color: var(--text-sub);
+    text-align: center;
+  }
+  footer a {
+    color: var(--text-sub);
+    text-decoration: underline;
+  }
+  a { color: var(--accent); }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="logo-badge">P</div>
+    <h1>PuttSense サポート</h1>
+    <p class="tagline">自宅でのパター練習をサポートする、手首の動きを計測するiPhoneアプリです。</p>
+
+    <div class="card">
+      <h2>アプリについて</h2>
+      <p>PuttSenseは、iPhoneのモーションセンサーを使ってパッティング時の手首の動き（こね）を計測し、自宅練習でのフォームチェックをサポートするアプリです。</p>
+    </div>
+
+    <div class="card">
+      <h2>お問い合わせ</h2>
+      <p>不具合のご報告、ご要望、その他お問い合わせは以下のメールアドレスまでご連絡ください。</p>
+      <a class="btn" href="mailto:anoguchi0830+puttsense@gmail.com">メールで問い合わせる</a>
+    </div>
+
+    <div class="card">
+      <h2>よくあるご質問</h2>
+      <div class="faq-item">
+        <h3>対応言語は？</h3>
+        <p>現在、日本語のみに対応しています。</p>
+      </div>
+      <div class="faq-item">
+        <h3>計測データは外部に送信されますか？</h3>
+        <p>いいえ。モーションセンサーのデータは端末上でのみ処理され、外部サーバーへの送信は行いません。詳しくは<a href="privacy.html">プライバシーポリシー</a>をご確認ください。</p>
+      </div>
+    </div>
+
+    <footer>
+      <p><a href="privacy.html">プライバシーポリシー</a></p>
+      <p>&copy; 2026 PuttSense</p>
+    </footer>
+  </div>
+</body>
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>プライバシーポリシー | PuttSense</title>
+<meta name="description" content="PuttSenseアプリのプライバシーポリシーです。">
+<style>
+  :root {
+    --bg: #f6f7f5;
+    --card-bg: #ffffff;
+    --text: #1c1f1b;
+    --text-sub: #56605a;
+    --accent: #1e7a4c;
+    --accent-dark: #16603b;
+    --border: #e2e6e0;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #14171a;
+      --card-bg: #1e2228;
+      --text: #eef1ee;
+      --text-sub: #a7b0aa;
+      --accent: #4fbf87;
+      --accent-dark: #6fd39f;
+      --border: #2c3138;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Yu Gothic", "Helvetica Neue", Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.8;
+    padding: 0 20px;
+  }
+  .wrap {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 56px 0 48px;
+  }
+  .back-link {
+    display: inline-block;
+    margin-bottom: 24px;
+    font-size: 14px;
+    color: var(--text-sub);
+    text-decoration: none;
+  }
+  .back-link:hover { color: var(--accent); }
+  h1 {
+    font-size: 24px;
+    margin: 0 0 6px;
+  }
+  .meta {
+    color: var(--text-sub);
+    font-size: 13.5px;
+    margin: 0 0 32px;
+  }
+  .card {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 32px 30px;
+  }
+  h2 {
+    font-size: 16.5px;
+    margin: 30px 0 10px;
+    padding-top: 20px;
+    border-top: 1px solid var(--border);
+  }
+  h2:first-of-type {
+    margin-top: 0;
+    padding-top: 0;
+    border-top: none;
+  }
+  p {
+    font-size: 15px;
+    margin: 0 0 10px;
+    color: var(--text);
+  }
+  ul {
+    margin: 0 0 10px;
+    padding-left: 20px;
+  }
+  li {
+    font-size: 15px;
+    margin-bottom: 6px;
+  }
+  a { color: var(--accent); }
+  .intro {
+    font-size: 15px;
+    color: var(--text-sub);
+    margin: 0 0 4px;
+  }
+  footer {
+    margin-top: 32px;
+    font-size: 13px;
+    color: var(--text-sub);
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <a class="back-link" href="index.html">&larr; サポートページに戻る</a>
+    <h1>プライバシーポリシー</h1>
+    <p class="meta">制定日：2026年7月11日</p>
+
+    <div class="card">
+      <p class="intro">「PuttSense」（以下「本アプリ」）は、個人開発者（以下「開発者」）が提供するiPhone向けパッティング練習支援アプリです。本ポリシーは、本アプリが取得・利用する情報について説明するものです。</p>
+
+      <h2>1. モーションセンサーデータ（CoreMotion）</h2>
+      <p>本アプリは、パッティング時の手首の角度を計測するため、端末のモーションセンサー（CoreMotion）から取得したデータを使用します。これらのデータはすべて端末上でのみ処理され、外部サーバーへの送信・保存は一切行いません。</p>
+
+      <h2>2. カメラ映像（AVFoundation）</h2>
+      <p>本アプリは、キャリブレーション（初期設定）機能において、インカメラのプレビュー映像を画面表示にのみ使用します。この映像を開発者側のサーバーに送信することはありません。なお、ユーザーご自身が動画の書き出し操作を行った場合に限り、その動画は端末の写真ライブラリ（カメラロール）に保存されます。</p>
+
+      <h2>3. 購入情報（StoreKit）</h2>
+      <p>本アプリ内の有料機能（買い切り型のアプリ内課金）の決済処理は、Apple社が提供するStoreKitを通じて行われます。開発者は購入者の氏名・住所・決済情報などの個人情報を取得・保持しません。</p>
+
+      <h2>4. 広告関連識別子・トラッキングデータ</h2>
+      <p>本アプリは広告配信のため、Google AdMobを利用しています。ユーザーがApp Tracking Transparency（ATT）の許可ダイアログで「トラッキングを許可」した場合に限り、IDFA等のトラッキングデータがGoogle AdMobに提供されます。許可しない場合、トラッキング目的でのデータ提供は行われません。</p>
+      <p>また、EEA（欧州経済領域）・英国等、GDPR等の地域規制が適用されるユーザーに対しては、Google User Messaging Platform（UMP）による同意フォームを表示し、広告に関する同意取得を行います。</p>
+
+      <h2>5. 利用データ（ラウンド結果・パットスコア）</h2>
+      <p>練習ラウンドの結果・パットスコアの履歴は、端末内（UserDefaults）にのみ保存されます。これらのデータは保存から90日間保持され、期限を過ぎたデータは自動的に削除されます。外部サーバーへの送信・同期は行いません。</p>
+
+      <h2>6. 分析・クラッシュ収集について</h2>
+      <p>本アプリは、Firebase等の第三者製アクセス解析SDKを導入していません。クラッシュ情報については、Apple標準の仕組み（App Store Connect経由のクラッシュレポート）のみを通じて収集される場合があります。</p>
+
+      <h2>7. お問い合わせ窓口</h2>
+      <p>本ポリシーに関するお問い合わせは、以下のメールアドレスまでご連絡ください。</p>
+      <p><a href="mailto:anoguchi0830+puttsense@gmail.com">anoguchi0830+puttsense@gmail.com</a></p>
+
+      <h2>8. 本ポリシーの改定</h2>
+      <p>本ポリシーの内容は、法令の改正やアプリの機能追加等に伴い、予告なく改定される場合があります。改定を行った場合は、本ページ上でその内容を更新します。</p>
+    </div>
+
+    <footer>
+      <p>&copy; 2026 PuttSense</p>
+    </footer>
+  </div>
+</body>
+</html>
